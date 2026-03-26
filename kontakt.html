@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slikshop</title>
+    <link rel="stylesheet" href="slikshop.css" />
+    <!-- ref til FontAwesomes stylesheet (så jeg kan bruge deres ikoner)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Her har jeg hentet font fra google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Form</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "hhgfZmS_f0fPzF_Bo",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("service_kdeeykt", "template_1x20o5v", this).then(
+              () => {
+                console.log("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              },
+            );
+          });
+      };
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="test-logo.png" alt="sky-logo" />
+        </a>
+      </div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="udvalg.html">Udvalg</a>
+        <a href="omos.html">Om os</a>
+        <a href="#">Butikker</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <h1>Kontakt os</h1>
+    <div class="kontaktWrapper">
+      <div class="kontaktContainer">
+        <p>
+          Du kan kontakte os via e-mail på info@sukkerskyen.dk eller ringe til
+          os på +45 12345678. <br />
+          <br />
+        </p>
+        <p>
+          Hvis du har en forespørgsel vedrørende din ordre, eller mulig
+          bestilling, kan du udfylde vores kontaktformular.
+        </p>
+      </div>
+
+      <form id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+        <input type="hidden" name="time" value="Mar 10 2025 08:46" />
+        <label>Navn</label>
+        <input type="text" name="name" required />
+        <label>Email</label>
+        <input type="email" name="email" required />
+        <label>Emne</label>
+        <input type="text" name="title" required />
+        <label>Besked</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+
+    <footer>
+      <div class="slik-kasse">
+        <img src="lilleslik.png" alt="tegning-af-slik" />
+      </div>
+
+      <div class="footerInfoBoks">
+        <div class="footerInfo">
+          <h4>Åbningstider:</h4>
+          <div class="footerInfoHours">
+            <p>Mandag - Fredag: 10:00 - 18:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Lukket</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="adresse">
+        <h4>Adresse:</h4>
+        <p>Eksempelgade 1, 1234 København</p>
+        <h4>Kontakt:</h4>
+        <p>
+          info@sukkerskyen.dk <br />
+          +45 12345678
+        </p>
+      </div>
+
+      <div class="container-footer-logo">
+        <div class="instagram-logo">
+          <a href="#">
+            <img
+              src="—Pngtree—instagram icon vector_8704817.png"
+              alt="insta-logo"
+            />
+          </a>
+        </div>
+
+        <div class="facebook-logo">
+          <a href="#">
+            <img src="Popular-facebook-Logo-png.png" alt="facebook-logo" />
+          </a>
+        </div>
+
+        <div class="tiktok-logo">
+          <a href="#">
+            <img
+              src="vecteezy_tiktok-png-icon_16716485.png"
+              alt="tiktok-logo"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="slikshop.js"></script>
+  </body>
+</html>

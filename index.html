@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slikshop</title>
+    <link rel="stylesheet" href="slikshop.css" />
+    <!-- ref til FontAwesomes stylesheet (så jeg kan bruge deres ikoner)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Her har jeg hentet font fra google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="test-logo.png" alt="sky-logo" />
+        </a>
+      </div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="udvalg.html">Udvalg</a>
+        <a href="omos.html">Om os</a>
+        <a href="#">Butikker</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <h1>Din smag. Dit valg. <br />Din oplevelse.</h1>
+
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="slik-1.png" alt="" />
+        <a href="#" class="caption">KØB DIT <br />YNDLINGSLIK!</a>
+      </div>
+      <div class="slide">
+        <img src="slik-2.png" alt="" />
+        <a href="#" class="caption">SE ALLE VORES BUTIKKER</a>
+      </div>
+      <div class="slide">
+        <img src="slik-3.png" alt="" />
+        <a href="#" class="caption">
+          DELTAG I SPÆNDENDE KONKURRENCE - VIND 5 KG SLIK!
+        </a>
+      </div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+
+    <div class="velkomstTekst">
+      <h2>Velkommen til vores slik-univers</h2>
+      <p>
+        Hos os handler det om frihed til at vælge præcis det, du har lyst til.
+        Med vores store udvalg af slik kan du sammensætte dine favoritter helt
+        efter egen smag – nemt, fleksibelt og præcis som du vil have det.
+        <br />
+        <br />Uanset om du er på udkig efter lidt til hverdagen eller noget
+        særligt til en bestemt anledning, giver vi dig muligheden for at
+        skræddersy din oplevelse. Du vælger, vi sørger for resten. Gå på
+        opdagelse i vores udvalg, mix dine favoritter, og oplev hvor enkelt det
+        er at få præcis det, du ønsker.
+      </p>
+      <button id="readMore">Læs mere</button>
+      <div class="infobox" id="infobox">
+        <p>
+          Vi udvælger nøje vores sortiment, så du altid får den bedste kvalitet
+          – og vi elsker at overraske med nye spændende produkter. Du kan selv
+          blande din helt egen pose slik, præcis som du ønsker det, eller finde
+          den perfekte gave til en, du holder af. Hos os handler det ikke kun om
+          slik – det handler om oplevelsen, glæden og de små øjeblikke, der gør
+          hverdagen lidt sødere. Kom forbi og lad dig friste – vi glæder os til
+          at byde dig velkommen!
+        </p>
+        <button id="closeBtn">Luk</button>
+      </div>
+    </div>
+
+    <div class="newsContainer">
+      <button class="news1">
+        <h2>GODE TILBUD</h2>
+        <p>
+          Få 20% rabat på alle bland selv slikposer i denne uge! Gælder både i
+          butik og online.
+        </p>
+      </button>
+      <button class="news2">
+        <h2>VORES BUTIKKER</h2>
+        <p>
+          Besøg vores fysiske butikker og oplev et stort udvalg af lækkert slik.
+        </p>
+      </button>
+      <button class="news3">
+        <h2>VORES APP</h2>
+        <p>
+          Download vores app og få adgang til eksklusive tilbud og rabatter.
+        </p>
+      </button>
+    </div>
+
+    <footer>
+      <div class="slik-kasse">
+        <img src="lilleslik.png" alt="tegning-af-slik" />
+      </div>
+
+      <div class="footerInfoBoks">
+        <div class="footerInfo">
+          <h4>Åbningstider:</h4>
+          <div class="footerInfoHours">
+            <p>Mandag - Fredag: 10:00 - 18:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Lukket</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="adresse">
+        <h4>Adresse:</h4>
+        <p>Eksempelgade 1, 1234 København</p>
+        <h4>Kontakt:</h4>
+        <p>
+          info@sukkerskyen.dk <br />
+          +45 12345678
+        </p>
+      </div>
+
+      <div class="container-footer-logo">
+        <div class="instagram-logo">
+          <a href="#">
+            <img
+              src="—Pngtree—instagram icon vector_8704817.png"
+              alt="insta-logo"
+            />
+          </a>
+        </div>
+
+        <div class="facebook-logo">
+          <a href="#">
+            <img src="Popular-facebook-Logo-png.png" alt="facebook-logo" />
+          </a>
+        </div>
+
+        <div class="tiktok-logo">
+          <a href="#">
+            <img
+              src="vecteezy_tiktok-png-icon_16716485.png"
+              alt="tiktok-logo"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="slikshop.js"></script>
+  </body>
+</html>
